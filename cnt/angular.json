@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "cnt-group-praktika": {
+    "cnt": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/cnt-group-praktika",
+            "outputPath": "dist/cnt",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -25,7 +25,6 @@
               "src/assets"
             ],
             "styles": [
-              "src/app/@theme/styles/theme-variables.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -61,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "cnt-group-praktika:build:production"
+              "browserTarget": "cnt:build:production"
             },
             "development": {
-              "browserTarget": "cnt-group-praktika:build:development"
+              "browserTarget": "cnt:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -72,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "cnt-group-praktika:build"
+            "browserTarget": "cnt:build"
           }
         },
         "test": {
@@ -95,8 +94,5 @@
         }
       }
     }
-  },
-  "cli": {
-    "analytics": "cbf0fcd6-b395-4209-a15c-02cce6d9ee47"
   }
 }

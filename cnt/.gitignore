@@ -1,11 +1,10 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
-/server/config/db.php
+
 # Compiled output
 /dist
 /tmp
 /out-tsc
 /bazel-out
-.backup
 
 # Node
 /node_modules
@@ -41,7 +40,3 @@ testem.log
 # System files
 .DS_Store
 Thumbs.db
-
-#composer
-composer.lock
-server/ttBack20x11.zip
