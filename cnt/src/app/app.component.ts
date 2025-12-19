@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-
 export class AppComponent {
-  title: string = 'Hello, Angular';
-}          
+  title = 'cnt-group-praktika';
+	// operation: number = (213 + 33) * 5 / 12 - 54;
+}
