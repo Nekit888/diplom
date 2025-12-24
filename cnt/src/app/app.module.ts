@@ -29,6 +29,7 @@ import { SharedModule } from './modules/shared/shared.module';
   ],
 
   imports: [
+    SharedModule,
     BrowserModule,
     AppRoutingModule,
 		SharedModule,
